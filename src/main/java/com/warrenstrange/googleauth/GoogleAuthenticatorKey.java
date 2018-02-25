@@ -100,7 +100,7 @@ public final class GoogleAuthenticatorKey
         this.config = config;
         this.key = key;
         this.verificationCode = verificationCode;
-        this.scratchCodes = new ArrayList<>(scratchCodes);
+        this.scratchCodes = new ArrayList<Integer>(scratchCodes);
     }
 
     /**
@@ -151,7 +151,7 @@ public final class GoogleAuthenticatorKey
         private GoogleAuthenticatorConfig config = new GoogleAuthenticatorConfig();
         private String key;
         private int verificationCode;
-        private List<Integer> scratchCodes = new ArrayList<>();
+        private List<Integer> scratchCodes = new ArrayList<Integer>();
 
         /**
          * Creates an instance of the builder.
